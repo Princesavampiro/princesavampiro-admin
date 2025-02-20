@@ -7,7 +7,7 @@ export default defineType({
   fields: [
     defineField({
       name: 'titulo',
-      title: 'Titulo',
+      title: 'Título',
       type: 'string',
       validation: (Rule) => Rule.required(),
     }),
@@ -110,7 +110,7 @@ export default defineType({
                 {name: 'en', title: 'Inglés', type: 'text'},
               ],
             },
-            {name: 'imagen', title: 'Imágen', type: 'image'},
+            {name: 'imagen', title: 'Imagen', type: 'image'},
           ],
         },
       ],
@@ -126,7 +126,7 @@ export default defineType({
           name: 'link',
           title: 'Link',
           fields: [
-            {name: 'titulo', title: 'Titulo', type: 'string'},
+            {name: 'titulo', title: 'Título', type: 'string'},
             {name: 'url', title: 'URL', type: 'url'},
           ],
         },

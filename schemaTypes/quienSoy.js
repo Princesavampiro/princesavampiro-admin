@@ -2,12 +2,12 @@ import {defineType, defineField} from 'sanity'
 
 export default defineType({
   name: 'quienSoy',
-  title: 'Quien soy',
+  title: 'Quién soy',
   type: 'document',
   fields: [
     defineField({
       name: 'titulo',
-      title: 'Titulo de la seccion',
+      title: 'Título de la seccion',
       type: 'object',
       description: 'Como aparece en la pagina web',
       fields: [

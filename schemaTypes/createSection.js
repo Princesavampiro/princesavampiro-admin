@@ -8,7 +8,7 @@ export default function createSection(title) {
     fields: [
       defineField({
         name: 'titulo',
-        title: 'Titulo de la seccion de lo ' + title.toUpperCase(),
+        title: 'Título de la seccion de lo ' + title.toUpperCase(),
         type: 'object',
         description: 'Como aparece en la pagina web',
         fields: [

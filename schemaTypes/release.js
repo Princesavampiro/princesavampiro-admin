@@ -7,7 +7,7 @@ export default defineType({
   fields: [
     defineField({
       name: 'titulo',
-      title: 'Titulo',
+      title: 'Título',
       type: 'string',
       validation: (Rule) => Rule.required(),
     }),
@@ -34,17 +34,15 @@ export default defineType({
     }),
 
     defineField({
-      name: 'tipoDeRelease',
-      title: 'Tipo de release',
-      type: 'reference',
-      to: {type: 'tipoDeRelease'},
-      validation: (Rule) => Rule.required(),
-    }),
-
-    defineField({
       name: 'sello',
       title: 'Sello',
       type: 'string',
+    }),
+
+    defineField({
+      name: 'artwork',
+      title: 'Arte de tapa',
+      type: 'image',
     }),
 
     defineField({
@@ -66,15 +64,27 @@ export default defineType({
     }),
 
     defineField({
-      name: 'artwork',
-      title: 'Arte de tapa',
-      type: 'image',
+      name: 'tipoDeRelease',
+      title: 'Tipo de release',
+      type: 'reference',
+      to: {type: 'tipoDeRelease'},
+      validation: (Rule) => Rule.required(),
     }),
 
     defineField({
       name: 'embed',
-      title: 'Codigo de embed',
+      title: 'Código de embed',
       type: 'text',
+    }),
+
+    defineField({
+      name: 'imagenes',
+      title: 'Imágenes',
+      type: 'array',
+      of: [{type: 'image'}],
+      options: {
+        layout: 'grid',
+      },
     }),
 
     defineField({
@@ -87,21 +97,11 @@ export default defineType({
           name: 'link',
           title: 'Link',
           fields: [
-            {name: 'titulo', title: 'Titulo', type: 'string'},
+            {name: 'titulo', title: 'Título', type: 'string'},
             {name: 'url', title: 'URL', type: 'url'},
           ],
         },
       ],
-    }),
-
-    defineField({
-      name: 'imagenes',
-      title: 'Imágenes',
-      type: 'array',
-      of: [{type: 'image'}],
-      options: {
-        layout: 'grid',
-      },
     }),
   ],
 })
