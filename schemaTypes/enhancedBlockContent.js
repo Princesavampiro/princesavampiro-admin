@@ -11,8 +11,8 @@ import {defineType, defineArrayMember} from 'sanity'
  *  }
  */
 export default defineType({
-  title: 'Block Content',
-  name: 'blockContent',
+  title: 'Enhanced Block Content',
+  name: 'enhancedBlockContent',
   type: 'array',
   of: [
     defineArrayMember({
@@ -23,16 +23,14 @@ export default defineType({
       // you want and decide how you want to deal with it where you want to
       // use your content.
       styles: [
-        // {title: 'Normal', value: 'normal'},
-        // // {title: 'H1', value: 'h1'},
-        // // {title: 'H2', value: 'h2'},
-        // {title: 'Titulo', value: 'h3'},
-        // {title: 'Subtitulo', value: 'h4'},
-        // {title: 'Cita', value: 'blockquote'},
+        {title: 'Normal', value: 'normal'},
+        // {title: 'H1', value: 'h1'},
+        // {title: 'H2', value: 'h2'},
+        {title: 'Titulo', value: 'h3'},
+        {title: 'Subtitulo', value: 'h4'},
+        {title: 'Cita', value: 'blockquote'},
       ],
-      lists: [
-        // {title: 'Lista', value: 'bullet'}
-      ],
+      lists: [{title: 'Lista', value: 'bullet'}],
 
       // Marks let you mark up inline text in the block editor.
       marks: {
@@ -62,9 +60,13 @@ export default defineType({
     // You can add additional types here. Note that you can't use
     // primitive types such as 'string' and 'number' in the same array
     // as a block type.
-    // defineArrayMember({
-    //   type: 'image',
-    //   options: {hotspot: true},
-    // }),
+    defineArrayMember({
+      type: 'image',
+      title: 'Imagen',
+      options: {hotspot: true},
+    }),
+    defineArrayMember({
+      type: 'embed',
+    }),
   ],
 })

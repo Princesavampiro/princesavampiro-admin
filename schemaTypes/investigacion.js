@@ -35,12 +35,12 @@ export default defineType({
         {
           name: 'es',
           title: 'Español',
-          type: 'blockContent',
+          type: 'enhancedBlockContent',
         },
         {
           name: 'en',
           title: 'Inglés',
-          type: 'blockContent',
+          type: 'enhancedBlockContent',
         },
       ],
     }),

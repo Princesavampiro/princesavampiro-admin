@@ -1,4 +1,5 @@
 import blockContent from './blockContent'
+import enhancedBlockContent from './enhancedBlockContent'
 import expo from './expo'
 import config from './config'
 import sonoro from './sonoro'
@@ -12,9 +13,11 @@ import quienSoy from './quienSoy'
 import blogPost from './blogPost'
 import investigacion from './investigacion'
 import articulo from './articulo'
+import embed from './embed'
 
 export const schemaTypes = [
   blockContent,
+  enhancedBlockContent,
   quienSoy,
   visceral,
   sonoro,
@@ -28,4 +31,5 @@ export const schemaTypes = [
   articulo,
   blogPost,
   config,
+  embed,
 ]
