@@ -11,11 +11,5 @@ export default defineType({
       type: 'string',
       validation: (Rule) => Rule.required(),
     }),
-
-    defineField({
-      name: 'embed',
-      title: 'Codigo de embed inicial',
-      type: 'text',
-    }),
   ],
 })
