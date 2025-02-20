@@ -1,3 +1,31 @@
 import blockContent from './blockContent'
+import expo from './expo'
+import config from './config'
+import sonoro from './sonoro'
+import release from './release'
+import tipoDeRelease from './tipoDeRelease'
+import live from './live'
+import visceral from './visceral'
+import visual from './visual'
+import escrito from './escrito'
+import quienSoy from './quienSoy'
+import blogPost from './blogPost'
+import investigacion from './investigacion'
+import articulo from './articulo'
 
-export const schemaTypes = [blockContent]
+export const schemaTypes = [
+  blockContent,
+  quienSoy,
+  visceral,
+  sonoro,
+  release,
+  tipoDeRelease,
+  live,
+  visual,
+  expo,
+  escrito,
+  investigacion,
+  articulo,
+  blogPost,
+  config,
+]
