@@ -20,8 +20,7 @@ export default defineType({
     defineField({
       name: 'slug',
       title: 'Slug',
-      description:
-        'Como aparece en la barra del navigador (ej. www.princesavampiro.com/titulo-de-la-seccion)',
+      description: 'Como aparece en la barra del navigador (ej. www.princesavampiro.com/quien-soy)',
       type: 'slug',
       options: {
         source: 'titulo.es',
@@ -74,6 +73,7 @@ export default defineType({
       name: 'cv',
       title: 'CV',
       type: 'object',
+      description: 'no hace falta llenar los dos campos, con uno solo esta joya 💎',
       fields: [
         {name: 'file', title: 'Archivo', type: 'file'},
         {name: 'url', title: 'Link', type: 'url'},
@@ -84,6 +84,7 @@ export default defineType({
       name: 'portfolio',
       title: 'Portfolio',
       type: 'object',
+      description: 'no hace falta llenar los dos campos, con uno solo esta joya 💎 ',
       fields: [
         {name: 'file', title: 'Archivo', type: 'file'},
         {name: 'url', title: 'Link', type: 'url'},
