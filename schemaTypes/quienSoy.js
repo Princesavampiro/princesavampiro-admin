@@ -107,6 +107,12 @@ export default defineType({
         },
       ],
     }),
+    defineField({
+      name: 'icono',
+      title: 'Icono',
+      type: 'image',
+      hidden: true,
+    }),
   ],
   preview: {
     select: {

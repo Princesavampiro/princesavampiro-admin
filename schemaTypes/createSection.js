@@ -40,6 +40,12 @@ export default function createSection(title) {
           {name: 'en', title: 'Inglés', type: 'blockContent'},
         ],
       },
+      defineField({
+        name: 'icono',
+        title: 'Icono',
+        type: 'image',
+        hidden: true,
+      }),
     ],
     preview: {
       select: {
