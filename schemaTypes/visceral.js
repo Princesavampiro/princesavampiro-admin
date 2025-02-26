@@ -37,6 +37,7 @@ export default defineType({
       deprecated: {
         reason: 'Usar el campo de abajo.',
       },
+      hidden: true,
     },
 
     {

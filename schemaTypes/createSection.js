@@ -42,6 +42,7 @@ export default function createSection(title) {
         deprecated: {
           reason: 'Usar el campo de abajo.',
         },
+        hidden: true,
       },
 
       {
