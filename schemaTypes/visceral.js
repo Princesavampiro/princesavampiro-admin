@@ -34,6 +34,19 @@ export default defineType({
         {name: 'es', title: 'Español', type: 'enhancedBlockContent'},
         {name: 'en', title: 'Inglés', type: 'enhancedBlockContent'},
       ],
+      deprecated: {
+        reason: 'Usar el campo de abajo.',
+      },
+    },
+
+    {
+      name: 'texto',
+      title: 'Descripción',
+      type: 'object',
+      fields: [
+        {name: 'es', title: 'Español', type: 'enhancedBlockContent'},
+        {name: 'en', title: 'Inglés', type: 'enhancedBlockContent'},
+      ],
     },
 
     defineField({

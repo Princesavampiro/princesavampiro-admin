@@ -39,7 +39,21 @@ export default function createSection(title) {
           {name: 'es', title: 'Español', type: 'blockContent'},
           {name: 'en', title: 'Inglés', type: 'blockContent'},
         ],
+        deprecated: {
+          reason: 'Usar el campo de abajo.',
+        },
       },
+
+      {
+        name: 'texto',
+        title: 'Descripción',
+        type: 'object',
+        fields: [
+          {name: 'es', title: 'Español', type: 'blockContent'},
+          {name: 'en', title: 'Inglés', type: 'blockContent'},
+        ],
+      },
+
       defineField({
         name: 'icono',
         title: 'Icono',

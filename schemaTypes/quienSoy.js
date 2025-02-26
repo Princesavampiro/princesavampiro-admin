@@ -45,6 +45,27 @@ export default defineType({
           type: 'blockContent',
         }),
       ],
+      deprecated: {
+        reason: 'Usar el campo de abajo.',
+      },
+    }),
+
+    defineField({
+      name: 'texto',
+      title: 'Bio',
+      type: 'object',
+      fields: [
+        defineField({
+          name: 'es',
+          title: 'Español',
+          type: 'blockContent',
+        }),
+        defineField({
+          name: 'en',
+          title: 'Inglés',
+          type: 'blockContent',
+        }),
+      ],
     }),
 
     defineField({
