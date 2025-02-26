@@ -17,7 +17,12 @@ export default defineType({
       title: 'Audio',
       type: 'object',
       fields: [
-        {name: 'archivo', title: 'Archivo', type: 'file'},
+        {
+          name: 'archivo',
+          title: 'Archivo',
+          type: 'file',
+          description: 'Usar formato mp3 e intentar no subir archivos muy pesados',
+        },
         {name: 'url', title: 'URL', type: 'url'},
       ],
       description:
