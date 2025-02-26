@@ -135,6 +135,12 @@ export default defineType({
       type: 'image',
       hidden: true,
     }),
+
+    defineField({
+      name: 'imagen',
+      title: 'Imagen',
+      type: 'image',
+    }),
   ],
   preview: {
     select: {
