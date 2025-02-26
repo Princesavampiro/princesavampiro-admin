@@ -11,5 +11,17 @@ export default defineType({
       type: 'string',
       validation: (Rule) => Rule.required(),
     }),
+
+    defineField({
+      name: 'audio',
+      title: 'Audio',
+      type: 'object',
+      fields: [
+        {name: 'archivo', title: 'Archivo', type: 'file'},
+        {name: 'url', title: 'URL', type: 'url'},
+      ],
+      description:
+        'Archivo de audio que se reproduce en la pagina de inicio. Es suficiente con que uno de los  campos tenga contenido.',
+    }),
   ],
 })
