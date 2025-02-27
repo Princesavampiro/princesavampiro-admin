@@ -30,28 +30,6 @@ export default defineType({
     }),
 
     defineField({
-      name: 'bio',
-      title: 'Bio',
-      type: 'object',
-      fields: [
-        defineField({
-          name: 'es',
-          title: 'Español',
-          type: 'blockContent',
-        }),
-        defineField({
-          name: 'en',
-          title: 'Inglés',
-          type: 'blockContent',
-        }),
-      ],
-      deprecated: {
-        reason: 'Usar el campo de abajo.',
-      },
-      hidden: true,
-    }),
-
-    defineField({
       name: 'texto',
       title: 'Bio',
       type: 'object',

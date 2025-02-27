@@ -32,20 +32,6 @@ export default function createSection(title) {
       }),
 
       {
-        name: 'descripcion',
-        title: 'Descripción',
-        type: 'object',
-        fields: [
-          {name: 'es', title: 'Español', type: 'blockContent'},
-          {name: 'en', title: 'Inglés', type: 'blockContent'},
-        ],
-        deprecated: {
-          reason: 'Usar el campo de abajo.',
-        },
-        hidden: true,
-      },
-
-      {
         name: 'texto',
         title: 'Descripción',
         type: 'object',

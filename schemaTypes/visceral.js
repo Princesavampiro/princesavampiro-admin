@@ -27,20 +27,6 @@ export default defineType({
     }),
 
     {
-      name: 'descripcion',
-      title: 'Descripción',
-      type: 'object',
-      fields: [
-        {name: 'es', title: 'Español', type: 'enhancedBlockContent'},
-        {name: 'en', title: 'Inglés', type: 'enhancedBlockContent'},
-      ],
-      deprecated: {
-        reason: 'Usar el campo de abajo.',
-      },
-      hidden: true,
-    },
-
-    {
       name: 'texto',
       title: 'Descripción',
       type: 'object',
