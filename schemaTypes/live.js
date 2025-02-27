@@ -34,6 +34,12 @@ export default defineType({
     }),
 
     defineField({
+      name: 'lugar',
+      title: 'Lugar',
+      type: 'string',
+    }),
+
+    defineField({
       name: 'texto',
       title: 'Texto',
       type: 'object',
