@@ -48,6 +48,16 @@ export default defineType({
     }),
 
     defineField({
+      name: 'tituloComentarios',
+      title: 'Título de la sección de comentarios',
+      type: 'object',
+      fields: [
+        {name: 'es', title: 'Español', type: 'string'},
+        {name: 'en', title: 'Inglés', type: 'string'},
+      ],
+    }),
+
+    defineField({
       name: 'comentarios',
       title: 'Comentarios de gente',
       type: 'array',
@@ -62,7 +72,12 @@ export default defineType({
               title: 'Autor',
               type: 'string',
             },
-            {name: 'es', title: 'Español', type: 'blockContent'},
+            {
+              name: 'es',
+              title: 'Español',
+              type: 'blockContent',
+              validation: (Rule) => Rule.required(),
+            },
             {name: 'en', title: 'Inglés', type: 'blockContent'},
           ],
         },
