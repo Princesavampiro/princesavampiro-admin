@@ -26,7 +26,7 @@ export default defineType({
       validation: (Rule) => Rule.required(),
     }),
 
-    {
+    defineField({
       name: 'texto',
       title: 'Descripción',
       type: 'object',
@@ -34,7 +34,7 @@ export default defineType({
         {name: 'es', title: 'Español', type: 'enhancedBlockContent'},
         {name: 'en', title: 'Inglés', type: 'enhancedBlockContent'},
       ],
-    },
+    }),
 
     defineField({
       name: 'links',
