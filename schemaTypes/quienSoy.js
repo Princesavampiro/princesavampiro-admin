@@ -117,6 +117,15 @@ export default defineType({
           title: 'Link',
           fields: [
             {name: 'titulo', title: 'Titulo', type: 'string'},
+            {
+              name: 'comentario',
+              title: 'Comentario',
+              type: 'object',
+              fields: [
+                {name: 'es', title: 'Español', type: 'string'},
+                {name: 'en', title: 'Inglés', type: 'string'},
+              ],
+            },
             {name: 'url', title: 'URL', type: 'url'},
           ],
         },
