@@ -37,6 +37,28 @@ export default defineType({
     }),
 
     defineField({
+      name: 'contacto',
+      title: 'Contacto',
+      type: 'object',
+      fields: [
+        {
+          name: 'mensaje',
+          title: 'Mensaje',
+          type: 'object',
+          fields: [
+            {name: 'es', title: 'Español', type: 'string'},
+            {name: 'en', title: 'Inglés', type: 'string'},
+          ],
+        },
+        {
+          name: 'email',
+          title: 'Email',
+          type: 'string',
+        },
+      ],
+    }),
+
+    defineField({
       name: 'links',
       title: 'Links',
       type: 'array',
