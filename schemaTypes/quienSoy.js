@@ -85,17 +85,6 @@ export default defineType({
     }),
 
     defineField({
-      name: 'cv',
-      title: 'CV',
-      type: 'object',
-      description: 'no hace falta llenar los dos campos, con uno solo esta joya 💎',
-      fields: [
-        {name: 'file', title: 'Archivo', type: 'file'},
-        {name: 'url', title: 'Link', type: 'url'},
-      ],
-    }),
-
-    defineField({
       name: 'portfolio',
       title: 'Portfolio',
       type: 'object',
