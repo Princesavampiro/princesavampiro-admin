@@ -68,14 +68,8 @@ export default defineType({
     }),
 
     defineField({
-      name: 'embedVideo',
-      title: 'Código de embed de video',
-      type: 'text',
-    }),
-
-    defineField({
-      name: 'embedAudio',
-      title: 'Código de embed de audio',
+      name: 'embed',
+      title: 'Código de embed',
       type: 'text',
     }),
 
