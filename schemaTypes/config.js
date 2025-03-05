@@ -1,4 +1,5 @@
 import {defineType, defineField} from 'sanity'
+import embed from './embed'
 
 export default defineType({
   name: 'config',
@@ -27,6 +28,16 @@ export default defineType({
       ],
       description:
         'Archivo de audio que se reproduce en la pagina de inicio. Es suficiente con que uno de los  campos tenga contenido.',
+    }),
+
+    defineField({
+      name: 'releaseDestacado',
+      title: 'Release destacado',
+      type: 'reference',
+      to: [{type: 'release'}],
+      options: {
+        disableNew: true,
+      },
     }),
   ],
 })
