@@ -31,8 +31,8 @@ export default defineType({
       title: 'Descripción',
       type: 'object',
       fields: [
-        {name: 'es', title: 'Español', type: 'enhancedBlockContent'},
-        {name: 'en', title: 'Inglés', type: 'enhancedBlockContent'},
+        {name: 'es', title: 'Español', type: 'blockContent'},
+        {name: 'en', title: 'Inglés', type: 'blockContent'},
       ],
     }),
 
@@ -73,6 +73,12 @@ export default defineType({
       name: 'imagen',
       title: 'Imagen',
       type: 'image',
+    }),
+
+    defineField({
+      name: 'embed',
+      title: 'Código de embed',
+      type: 'text',
     }),
   ],
 })
